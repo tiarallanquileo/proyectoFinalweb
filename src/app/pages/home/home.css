@@ -1,0 +1,5 @@
+img{
+    height: 25rem;
+    /*propiedad para ajustae el contenido y mantener la calidad de*/
+    object-fit: cover;
+}

@@ -1,17 +1,28 @@
 <div class="containes">
     <div class="row">
-        <div class="col -lg-3 col-md-6 col-sm-12 md-4">
+        <!--*ngFor -> derectiva REPETIVIVA para iterar colecciones o arreglos
+        ´funcionalidad similar o misma wue repetitiva "for", "forEach
+        let i -> definicion de la variable que representa un elemento de la coleción 
+         "infoTarjeta" (permite iterar)-->
+        <div *ngFor="le i of infotarjeta" class="col -lg-3 col-md-6 col-sm-12 md-4">
             <div class="card">
+                <!--{{i.propiedad}} -> interpolación para propiedades-->
+                <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                        <h5 class="card-title">{{i.titulo}}</h5>
+                        <p class="card-text">
+                           {{i.descripcion}}
+                        </p>
+                        <p class="card-text">
+                            {{i.fechapostal}} - {{i.precio}}
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver mas </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div>S
